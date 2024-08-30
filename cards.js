@@ -1,0 +1,1 @@
+let photoSwiper=new Swiper(".swiper.is-photos",{effect:"cards",grabCursor:!0,loop:!0,keyboard:!0,navigation:{nextEl:".arrow.is-right",prevEl:".arrow.is-left"}}),contentSwiper=new Swiper(".swiper.is-content",{speed:0,loop:!0,followFinger:!1,effect:"fade",fadeEffect:{crossFade:!0}});photoSwiper.controller.control=contentSwiper,contentSwiper.controller.control=photoSwiper;
